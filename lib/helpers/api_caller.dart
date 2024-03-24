@@ -8,8 +8,7 @@ class ApiCaller {
 
   Future<String> get(String endpoint, {Map<String, dynamic>? params}) async {
     try {
-      final response =
-          await _dio.get('$baseUrl/$endpoint', queryParameters: params);
+      final response = await _dio.get('$baseUrl/$endpoint', queryParameters: params);
       debugPrint('Status code: ${response.statusCode}');
       debugPrint(response.data.toString());
       return response.data.toString();
@@ -23,8 +22,7 @@ class ApiCaller {
     }
   }
 
-  Future<String> post(String endpoint,
-      {required Map<String, dynamic>? params}) async {
+  Future<String> post(String endpoint, {required Map<String, dynamic>? params}) async {
     try {
       final response = await _dio.post('$baseUrl/$endpoint', data: params);
       debugPrint('Status code: ${response.statusCode}');

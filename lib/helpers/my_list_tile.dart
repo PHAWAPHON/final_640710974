@@ -44,7 +44,7 @@ class MyListTile extends StatelessWidget {
                   child: Container(
                     width: 100.0,
                     height: 80.0,
-                    child: Image.network(imageUrl),
+                    child: Image.network('https://cpsu-api-49b593d4e146.herokuapp.com'+imageUrl),
                   ),
                 ),
                 SizedBox(width: 12.0),
