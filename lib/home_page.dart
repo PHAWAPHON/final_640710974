@@ -166,7 +166,8 @@ class _HomePageState extends State<HomePage> {
           "type": selectedTypeId,
         },
       );
-
+      textController.clear();
+     textController2.clear();
       Map map = jsonDecode(data);
       var summary = map['summary'];
       String text = 'ขอบคุณสำหรับการแจ้งข้อมูล รหัสข้อมูลของคุณคือ ' +
