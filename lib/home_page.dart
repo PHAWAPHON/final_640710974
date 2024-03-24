@@ -125,7 +125,7 @@ class _HomePageState extends State<HomePage> {
                 'ส่งข้อมูล',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 20, // Increase the font size here
+                  fontSize: 20, 
                 ),
               ),
             ),
